@@ -1,0 +1,96 @@
+.audit-section {
+  background: #fff7f4;
+  text-align: center;
+  overflow: hidden;
+}
+
+.audit-strip {
+  background: #ff4d00;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 14px 0;
+  white-space: nowrap;
+}
+
+.audit-strip.bottom {
+  margin-top: 80px;
+}
+
+.audit-strip-track {
+  display: inline-flex;
+  gap: 24px;
+  animation: strip-scroll 30s linear infinite;
+}
+
+.audit-content {
+  padding: 120px 24px 80px;
+}
+
+.audit-content h2 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: #000;
+}
+
+.audit-content h2 span {
+  color: #ff4d00;
+}
+
+.audit-input {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.audit-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 16px 20px;
+  font-size: 16px;
+  border-radius: 999px;
+}
+
+.audit-input button {
+  background: #ff4d00;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@keyframes strip-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .audit-content h2 {
+    font-size: 40px;
+  }
+
+  .audit-input {
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 20px;
+    padding: 16px;
+  }
+
+  .audit-input button {
+    width: 100%;
+  }
+}

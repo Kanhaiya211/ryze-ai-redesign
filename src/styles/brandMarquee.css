@@ -1,0 +1,49 @@
+.brand-section {
+  padding: 20px 0;
+  background: #fff;
+  overflow: hidden;
+}
+.brand-section{
+    border-top: 10px solid rgb(231, 223, 223);
+     border-bottom: 10px solid rgb(231, 223, 223);
+}
+#client{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 80px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.marquee-track img {
+  height: 100px;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: opacity 0.3s ease;
+}
+
+.marquee-track img:hover {
+  opacity: 20;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
